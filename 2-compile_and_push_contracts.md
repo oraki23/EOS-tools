@@ -33,6 +33,16 @@ cleos push action addressbook upsert '["alice", "alice", "liddell", "123 drink m
 cleos push action < contract > < action > < parameters >
 ```
 
+- You can use the -d to not broadcast the transaction.
+- you can use the -j option to return the trx as json.
+
+
+# Delete a contract
+
+```
+cleos set contract -c < account > < contact dir >
+```
+
 # Example of contract execution on secondary indices
 
 ```

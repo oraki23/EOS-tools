@@ -18,6 +18,8 @@ cleos wallet list
 cleos wallet unlock
 ```
 
+See password.txt file for one line command with the password
+
 # Import keys into a Wallet
 
 ```
@@ -34,5 +36,11 @@ cleos wallet import
 cleos create account eosio bob
 
 cleos get account alice
+```
+
+# Get Accounts which have a specific public key
+
+```
+cleos get accounts < public key >
 ```
 
