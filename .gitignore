@@ -1,2 +1,9 @@
 passwords.txt
 nodeos.log
+
+simple_blockchain/genesis.json
+simple_blockchain/genesis/blockchain
+
+simple_blockchain/genesis/start.sh
+simple_blockchain/genesis/hard_replay.sh
+simple_blockchain/genesis/genesis_start.sh

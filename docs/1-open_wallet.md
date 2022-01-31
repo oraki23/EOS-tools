@@ -33,7 +33,7 @@ cleos wallet import
 - Each account has a "owner" key and "active" key
 
 ```
-cleos create account eosio bob
+cleos create account eosio bob <pub_key>
 
 cleos get account alice
 ```
