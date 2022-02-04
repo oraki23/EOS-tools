@@ -43,7 +43,11 @@ cleos push action < contract > < action > < parameters >
 cleos set contract -c < account > < contact dir >
 ```
 
-# Example of contract execution on secondary indices
+# Example of contract execution on primary and secondary indices
+
+```
+cleos get table addressbook addressbook people --lower alice --limit 1
+```
 
 ```
 cleos get table addressbook addressbook people --upper 10 \
