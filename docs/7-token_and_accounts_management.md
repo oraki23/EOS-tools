@@ -12,16 +12,18 @@ cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio.token issue '[ 
 
 cleos --url=http://eos1.anthonybrochu.com:8889 system newaccount eosio --transfer anthonyact11 EOS84kMbo8nunhUpT8WrMpAt9BNyY1criza9CvqXXaYDLPHg18Ejj --stake-net "100000.0000 SYS" --stake-cpu "100000.0000 SYS" --buy-ram-kbytes 8192
 
+cleos --url=http://eos1.anthonybrochu.com:8889 system newaccount eosio --transfer anthonyact11 EOS84kMbo8nunhUpT8WrMpAt9BNyY1criza9CvqXXaYDLPHg18Ejj --stake-net "100000.0000 SYS" --stake-cpu "100000.0000 SYS" --buy-ram-kbytes 8192
 
-cleos --url=http://eos1.anthonybrochu.com:8889 system newaccount eosio --transfer atomicassets EOS84kMbo8nunhUpT8WrMpAt9BNyY1criza9CvqXXaYDLPHg18Ejj --stake-net "100000.0000 SYS" --stake-cpu "100000.0000 SYS" --buy-ram-kbytes 8192
+cleos --url=http://eos1.anthonybrochu.com:8889 system newaccount eosio --transfer nfticket EOS5EHh3GixGi8V2Nazh5XB7W8xgbrFJNCBM8Mv13uQYp2antwPf1 --stake-net "100000.0000 SYS" --stake-cpu "100000.0000 SYS" --buy-ram-kbytes 8192
 
 
 # Transfer tokens
 
-cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio.token transfer '[ "eosio", "anthonyact11", "25.0000 SYS", "m" ]' -p eosio@active
+cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio.token transfer '[ "eosio", "anthonyact11", "125.0000 SYS", "m" ]' -p eosio@active
 
 cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio.token transfer '[ "anthonyact11", "eosio", "25.0000 SYS", "m" ]' -p anthonyact11@active
 
+cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio.token transfer '[ "nfticket", "anthonyact11", "25.0000 SYS", "m" ]' -p nfticket@active
 
 # Stake Ressource (CPU, NET)
 
