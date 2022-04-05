@@ -16,6 +16,7 @@ cleos --url=http://eos1.anthonybrochu.com:8889 system newaccount eosio --transfe
 
 cleos --url=http://eos1.anthonybrochu.com:8889 system newaccount eosio --transfer nfticket EOS5EHh3GixGi8V2Nazh5XB7W8xgbrFJNCBM8Mv13uQYp2antwPf1 --stake-net "100000.0000 SYS" --stake-cpu "100000.0000 SYS" --buy-ram-kbytes 8192
 
+cleos --url=http://eos1.anthonybrochu.com:8889 system newaccount eosio --transfer emmanuel EOS5oCb6BazbbE3k9MsKDUABZ7QnmFymomPuddNdtD42NGpiWZpMh --stake-net "100000.0000 SYS" --stake-cpu "100000.0000 SYS" --buy-ram-kbytes 8192
 
 # Transfer tokens
 
