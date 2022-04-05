@@ -35,3 +35,7 @@ cleos --url=http://eos1.anthonybrochu.com:8889 push action atomicassets createof
 cleos --url=http://eos1.anthonybrochu.com:8889 push action atomicassets canceloffer '[ 1 ]' -p anthonyact11@active
 
 cleos --url=http://eos1.anthonybrochu.com:8889 push action atomicassets declineoffer '[ 1 ]' -p nfticket@active
+
+## View Offers
+
+cleos  --url=http://eos1.anthonybrochu.com:8889 get table atomicassets atomicassets offers
