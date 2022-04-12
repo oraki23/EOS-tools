@@ -22,6 +22,8 @@ cleos --url=http://eos1.anthonybrochu.com:8889 set account permission atomicasse
 
 cleos --url=http://eos1.anthonybrochu.com:8889 push action atomicassets extendschema '['anthonyact11', 'anthonyact11', 'ticket', [{ "name": "signed", "type": "bool" }]]' -p anthonyact11@active
 
+cleos --url=http://eos1.anthonybrochu.com:8889 push action atomicassets extendschema '['anthonyact11', 'anthonyact11', 'ticket', [{ "name": "used", "type": "uint8" }]]' -p anthonyact11@active
+
 cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio rtmp '{}' -p anthonyact11@active
 
 # Transfer
