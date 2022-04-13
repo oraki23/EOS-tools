@@ -18,11 +18,26 @@ cleos --url=http://eos1.anthonybrochu.com:8889 get table atomicassets atomicasse
 
 cleos --url=http://eos1.anthonybrochu.com:8889 set account permission atomicassets active --add-code
 
+# View collection
+
+cleos --url=http://eos1.anthonybrochu.com:8889 get table atomicassets atomicassets collections --lower nftiemmanuel --limit 1
+
+cleos --url=http://eos1.anthonybrochu.com:8889 get table atomicassets atomicassets collections --lower nftiemmanuel --limit 1
+
+# View Schema
+
+cleos --url=http://eos1.anthonybrochu.com:8889 get table atomicassets anthonyact11 schemas
+
+cleos --url=http://eos1.anthonybrochu.com:8889 get table atomicassets nftiemmanuel schemas
+
+
 # Extends schema
 
 cleos --url=http://eos1.anthonybrochu.com:8889 push action atomicassets extendschema '['anthonyact11', 'anthonyact11', 'ticket', [{ "name": "signed", "type": "bool" }]]' -p anthonyact11@active
 
 cleos --url=http://eos1.anthonybrochu.com:8889 push action atomicassets extendschema '['anthonyact11', 'anthonyact11', 'ticket', [{ "name": "used", "type": "uint8" }]]' -p anthonyact11@active
+
+cleos --url=http://eos1.anthonybrochu.com:8889 push action atomicassets extendschema '['emmanuel', 'nftiemmanuel', 'ticket', [{ "name": "used", "type": "uint8" }]]' -p emmanuel@active
 
 cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio rtmp '{}' -p anthonyact11@active
 

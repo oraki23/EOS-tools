@@ -18,6 +18,8 @@ cleos --url=http://eos1.anthonybrochu.com:8889 system newaccount eosio --transfe
 
 cleos --url=http://eos1.anthonybrochu.com:8889 system newaccount eosio --transfer emmanuel EOS5oCb6BazbbE3k9MsKDUABZ7QnmFymomPuddNdtD42NGpiWZpMh --stake-net "100000.0000 SYS" --stake-cpu "100000.0000 SYS" --buy-ram-kbytes 8192
 
+cleos --url=http://eos1.anthonybrochu.com:8889 system newaccount eosio --transfer laurent EOS8PffZUKAmeVgR9HdPSRfHSZ1DH8QRdpGMEsS928zWDpGCBsjGe --stake-net "100000.0000 SYS" --stake-cpu "100000.0000 SYS" --buy-ram-kbytes 8192
+
 # Transfer tokens
 
 cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio.token transfer '[ "eosio", "anthonyact11", "125.0000 SYS", "m" ]' -p eosio@active
@@ -25,6 +27,8 @@ cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio.token transfer 
 cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio.token transfer '[ "anthonyact11", "eosio", "25.0000 SYS", "m" ]' -p anthonyact11@active
 
 cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio.token transfer '[ "nfticket", "anthonyact11", "25.0000 SYS", "m" ]' -p nfticket@active
+
+cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio.token transfer '[ "eosio", "laurent", "10000.0000 SYS", "m" ]' -p eosio@active
 
 # Stake Ressource (CPU, NET)
 
