@@ -20,6 +20,12 @@ cleos --url=http://eos1.anthonybrochu.com:8889 system newaccount eosio --transfe
 
 cleos --url=http://eos1.anthonybrochu.com:8889 system newaccount eosio --transfer laurent EOS8PffZUKAmeVgR9HdPSRfHSZ1DH8QRdpGMEsS928zWDpGCBsjGe --stake-net "100000.0000 SYS" --stake-cpu "100000.0000 SYS" --buy-ram-kbytes 8192
 
+cleos --url=http://eos1.anthonybrochu.com:8889 system newaccount eosio --transfer demo1 EOS83F55PV1CWmi2gQAZ4jZ8AxTDbXHUsZvgR4d7hU2dkypYG6QTD --stake-net "100000.0000 SYS" --stake-cpu "100000.0000 SYS" --buy-ram-kbytes 8192
+
+cleos --url=http://eos1.anthonybrochu.com:8889 system newaccount eosio --transfer demo2 EOS83F55PV1CWmi2gQAZ4jZ8AxTDbXHUsZvgR4d7hU2dkypYG6QTD --stake-net "100000.0000 SYS" --stake-cpu "100000.0000 SYS" --buy-ram-kbytes 8192
+
+cleos --url=http://eos1.anthonybrochu.com:8889 system newaccount eosio --transfer demo3 EOS83F55PV1CWmi2gQAZ4jZ8AxTDbXHUsZvgR4d7hU2dkypYG6QTD --stake-net "100000.0000 SYS" --stake-cpu "100000.0000 SYS" --buy-ram-kbytes 8192
+
 # Transfer tokens
 
 cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio.token transfer '[ "eosio", "anthonyact11", "125.0000 SYS", "m" ]' -p eosio@active
@@ -29,6 +35,12 @@ cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio.token transfer 
 cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio.token transfer '[ "nfticket", "anthonyact11", "25.0000 SYS", "m" ]' -p nfticket@active
 
 cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio.token transfer '[ "eosio", "laurent", "10000.0000 SYS", "m" ]' -p eosio@active
+
+cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio.token transfer '[ "eosio", "demo1", "10000.0000 SYS", "m" ]' -p eosio@active
+cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio.token transfer '[ "eosio", "demo2", "10000.0000 SYS", "m" ]' -p eosio@active
+cleos --url=http://eos1.anthonybrochu.com:8889 push action eosio.token transfer '[ "eosio", "demo3", "10000.0000 SYS", "m" ]' -p eosio@active
+
+
 
 # Stake Ressource (CPU, NET)
 

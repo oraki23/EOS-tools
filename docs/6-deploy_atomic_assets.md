@@ -30,6 +30,10 @@ cleos --url=http://eos1.anthonybrochu.com:8889 get table atomicassets anthonyact
 
 cleos --url=http://eos1.anthonybrochu.com:8889 get table atomicassets nftiemmanuel schemas
 
+# View assets
+
+cleos --url=http://eos1.anthonybrochu.com:8889 get table atomicassets nftiemmanuel assets
+
 
 # Extends schema
 
